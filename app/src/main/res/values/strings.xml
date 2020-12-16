@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Example App</string>
+
+    <string name="ChannelId">channelId</string>
+    <string name="channelName">channelName</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+<!--    <string name="facebook_app_id">894882580618030</string>-->
+<!--    <string name="fb_login_protocol_scheme">fb204127990172423</string>-->
+
+    <string name="facebook_app_id">1233975943622794</string>
+    <string name="fb_login_protocol_scheme">fb1233975943622794</string>
+
+
+
+</resources>
