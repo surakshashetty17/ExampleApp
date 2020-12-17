@@ -5,20 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Page Number1"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
 
 
-    <TextView
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page Number1"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+
+        <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,13 +29,9 @@
         android:padding="5dp"
         android:text="My Great App"
         android:textColor="@color/Green"
+        android:layout_gravity="center"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.584"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348" />
+        android:layout_marginTop="20dp"/>
 
 
     <Button
@@ -44,25 +42,19 @@
         android:gravity="center"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
+        android:layout_gravity="center"
         android:text="Cick here to move further"
         android:textColor="@color/white"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.626"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.134" />
+        android:layout_marginTop="20dp"
+        android:textSize="15sp" />
 
     <ImageView
         android:id="@+id/whatsappimage"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@drawable/whatsapp1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/whatsapp" />
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/whatsapp1" />
 
     <Button
         android:id="@+id/whatsapp"
@@ -72,15 +64,24 @@
         android:gravity="center"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
+        android:layout_gravity="center"
         android:text="WhatsApp"
         android:textColor="@color/white"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1"
-        app:layout_constraintVertical_bias="0.159" />
+        android:layout_marginTop="20dp"/>
 
+        <Button
+            android:id="@+id/altertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="Alter Dialog"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

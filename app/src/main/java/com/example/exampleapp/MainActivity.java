@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "MyTag";
     private TextView mOutputText;
-    Button button,buttonwhatsapp;
+    Button button,buttonwhatsapp,alter;
     ImageView imagewhatsapp;
     Context context;
     String URL_STORE__TOKEN = "http://v1.api.nanocart.in/index.php/api/home/device_update";
@@ -47,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        alter = (Button)findViewById(R.id.altertext);
+        alter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,AlertDialogActivity.class);
+                startActivity(intent);
+            }
+        });
 
         imagewhatsapp = (ImageView)findViewById(R.id.whatsappimage);
         imagewhatsapp.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
 
         mOutputText=findViewById(R.id.textView);
 
