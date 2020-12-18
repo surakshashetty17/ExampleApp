@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "MyTag";
     private TextView mOutputText;
-    Button button,buttonwhatsapp,alter;
+    Button button,buttonwhatsapp,alter,sharing;
     ImageView imagewhatsapp;
     Context context;
     String URL_STORE__TOKEN = "http://v1.api.nanocart.in/index.php/api/home/device_update";
@@ -53,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,AlertDialogActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        sharing = (Button)findViewById(R.id.sharing);
+        sharing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SharingActivity.class);
                 startActivity(intent);
             }
         });
