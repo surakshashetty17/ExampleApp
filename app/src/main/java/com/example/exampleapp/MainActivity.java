@@ -57,15 +57,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button_home = (Button) findViewById(R.id.main_home);
+        button_home=(Button)findViewById(R.id.main_home);
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,HomeActivity.class);
-                startActivity(intent);
+                Intent i=new Intent(MainActivity.this,HomeActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(i);
             }
         });
-
         imagewhatsapp = (ImageView)findViewById(R.id.whatsappimage);
         imagewhatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
