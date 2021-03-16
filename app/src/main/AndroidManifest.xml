@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AlertDialogActivity"></activity>
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".AlertDialogActivity" />
         <activity android:name=".ScannerActivity" />
         <activity android:name=".GoogleFacebookActivity" />
         <activity android:name=".ProfileActivity" />
