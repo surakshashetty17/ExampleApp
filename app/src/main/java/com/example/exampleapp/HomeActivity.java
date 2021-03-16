@@ -38,29 +38,6 @@ public class HomeActivity extends AppCompatActivity {
         fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         fragmentTransaction.commit();
 
-//        bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//
-//                switch (item.getItemId()) {
-//                    case R.id.nav_home:
-//                        fragment = new HomeMainFragment();
-//                        break;
-//                    case R.id.nav_shop:
-//                        fragment = new MyAccountFragment();
-//                        break;
-////                            case R.id.navigation_notifications:
-////                                fragment = new HomeFragment();
-////                                return true;
-//                }
-//                FragmentManager fm = getSupportFragmentManager();
-//                FragmentTransaction ft = fm.beginTransaction();
-//                ft.replace(R.id.container, fragment);
-//                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-//                ft.commit();
-//                return true;
-//            }
-//        });
 
         simple_switch = (Switch) findViewById(R.id.simple_switch);
         simple_switch.setOnClickListener(new View.OnClickListener() {
